@@ -58,20 +58,3 @@ botonDinamico.addEventListener("click", function () {
     textarea.value = "";
     ocultarElementos();
 })
-
-
-const botonDinamico1 = () => {
-    // let input = document.querySelector(".entrada-texto");
-    
-
-    let cajaBlanca = document.querySelector(".caja-niño");
-    let botonCopiar = document.createElement("button");
-    botonCopiar.classList.add("botonDinamico");
-    cajaBlanca.appendChild(botonCopiar);
-    botonCopiar.innerHTML = `copiar`;
-
-}
-
-
-
-
