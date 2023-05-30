@@ -13,7 +13,6 @@ botonEncriptar.addEventListener("click", () => {
 
     if (texto != "") {
         mostrarElementos();
-        //botonDinamico();
         textarea.value = encriptadora(texto);
         return true
     }
@@ -48,6 +47,8 @@ const mostrarElementos = () => {
 const ocultarElementos = () => {
     imagen.style.display = "block";
     errorInput.style.display = "none";
+    tituloInformativo.style.display = "none";
+    textoInformativo.style.display = "none";
     botonDinamico.style.display = "none";
 }
 
@@ -56,5 +57,5 @@ botonDinamico.addEventListener("click", function () {
     let nuevoInput = document.querySelector(".entrada-texto");
     nuevoInput.value = textarea.value;
     textarea.value = "";
-    ocultarElementos();
+    ocultarElementos(true);
 })
