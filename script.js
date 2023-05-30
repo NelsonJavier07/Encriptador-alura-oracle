@@ -47,8 +47,6 @@ const mostrarElementos = () => {
 
 const ocultarElementos = () => {
     imagen.style.display = "block";
-    // tituloInformativo.style.display = "block";
-    // textoInformativo.style.display = "block";
     errorInput.style.display = "none";
     botonDinamico.style.display = "none";
 }
