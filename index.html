@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+    <title>Challenge Encriptador Alura</title>
+</head>
+
+<body>
+    <span>
+        <img class="logo" src="/img/alura-img.png" alt="Logo Alura">
+    </span>
+    <section class="container">
+        <div class="container-B">
+            <div class="input">
+                <input class="entrada-texto" type="text" placeholder="Ingrese su texto aqui" value="">
+                <br>
+                <small class="error-input-vacio" style="color: red; display: none;">Debes ingresar un texto</small>
+            </div>
+            <div class="botones">
+                <p>⚠ Solo letras minusculas y sin acentos</p>
+                <button class="boton-encriptador">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    Encriptador
+                </button>
+                <button class="boton-desencriptador">Desencriptador</button>
+            </div>
+        </div>
+        <div class="caja-niño">
+            <textarea name="textoResuelto" id="" cols="30" rows="10" class="textarea"></textarea>
+            <img class="robot" src="/img/robot.png" alt="Niño con lupa">
+            <h3 class="titulo-indicador-vacio">Ningun texto mensaje fue encontrado</h3>
+            <p class="texto-indicador-vacio">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="botonDinamico">COPIAR</button>
+        </div>
+    </section>
+    <script src="desencritar.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
